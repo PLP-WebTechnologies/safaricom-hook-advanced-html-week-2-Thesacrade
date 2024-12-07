@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queriess</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <h2>Multimedia in a web page</h2>
+    <section style="margin: 50px 0px">      
+      <div class="audio">
+        <h3>Audio track</h3>
+        <audio controls muted>
+          <source src="media/ai.mp3" type="audio/mpeg" />
+          A audio explaining AI basics
+        </audio>
+      </div>
+      <div class="video">
+        <h3>Video track</h3>
+        <video
+          controls
+          muted
+          width="350px"
+          height="250px"
+          poster="media/ai_image.jpg"
+        >
+          <source src="media/ai_video.mp4" type="video/mp4" />
+          A video briefly explaining Artificial Intelligence
+        </video>
+      </div>
+    </section>
+    <section>
+      <fieldset>
+        <legend>User Information</legend>
+        <form method="post" action="/submit">
+          <label for="username" >Full Name: </label> 
+          <input
+           type="text" 
+          id="username" 
+          name="username" 
+          placeholder="Enter full name" 
+          required minlength="6">
+          <br>
+          <br>
+          <label for="email">Email Address:</label>
+          <input type="email" 
+          id="email" 
+          name="email" 
+          required placeholder="example@domain.com"
+          title="Enter a valid email address" >
+          <br>         
+          <br>
+          <label for="password">Password:</label>
+          <input type="password" name="password" id="password" required minlength="8">
+          <br><br>
+          <label for="age">Age:</label>
+          <input type="number" name="age" id="age" min="18">
+          <br><br>
+          
+          <label> <input type="radio" name="gender" value="Male">Male</label>
+          <br>
+          <label > <input type="radio" name="gender" value="Female">Female</label>
+          <br>
+          <label><input type="radio" name="gender" value="Other">Other</label>
+          <br>
+          <br>
+          <label > <input type="checkbox" name="conditions" value="terms">Agree with Terms and conditions</label>
+          
+          <br><br>
+          <button type="submit">Register</button>
+        </form>
+      
+      </fieldset>
+    
+      
+
+    </form>
+    </section>
+
+
+  </body>
+</html>
